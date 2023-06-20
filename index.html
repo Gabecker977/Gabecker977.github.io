@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Animes</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Lista de Animes</h1>
+  <button type="button" class="btn btn-primary" id="add-random-anime-button">Adicionar Anime Aleatório</button>
+<!-- Botão para abrir a modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAnimeModal">
+  Adicionar Anime
+</button>
+</div>
+  <div class="container">
+  <div id="anime-container" class="row justify-content-center mt-4" ></div>
+<!-- Modal -->
+<div class="modal fade" id="addAnimeModal" tabindex="-1" aria-labelledby="addAnimeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addAnimeModalLabel">Adicionar Anime</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="add-anime-form">
+          <div class="mb-3">
+            <label for="anime-type" class="form-label">Tipo de anime</label>
+            <select name="" id="anime-type-value" required>
+              <option value="ova">Ova</option>
+              <option value="movie">Filme</option>
+              <option value="music">Musical</option>
+              <option value="tv">Tv</option>
+              <option value="special">Special</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="anime-limit" class="form-label">Quantidade</label>
+            <input type="number" name="" id="anime-count" required>
+          </div>
+          <button type="submit" class="submitButton btn btn-primary" id="submitAnime">Adicionar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editAnimeModal" tabindex="-1" aria-labelledby="editAnimeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editAnimeModalLabel">Editar Anime</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="edit-anime-form">
+          <div class="mb-3">
+            <label for="anime-synopsis" class="form-label">Sinopse do Anime</label>
+            <textarea id="anime-synopsis" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitAnimeEdit">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

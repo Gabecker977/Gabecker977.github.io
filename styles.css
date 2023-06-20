@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #000000, #000080); /* Adiciona o gradiente do preto ao azul escuro */
+  background-size: cover; /* Garante que o gradiente cubra todo o corpo */
+  background-attachment: fixed; 
+  color: #fff; /* Torna o texto branco para contraste */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fff; /* Torna o texto branco para contraste */
+}
+
+
+.card {
+  margin: 10px; /* Adiciona um espaçamento entre os cards */
+  background-color: #350c48!important; /* Define a cor de fundo do card para uma cor mais escura */
+  color: #fff; /* Define a cor do texto do card para branco */
+  transition: background-color 0.5s ease-in-out;
+}
+
+.card:hover {
+  background-color: #444; /* Define a cor de fundo do card no estado hover para uma cor mais escura */
+}
+
+.card-img-top {
+  max-height: 200px;
+}
+
+.card-body {
+  color: #fff; /* Define a cor do texto do corpo do card para branco */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* Define a cor do texto do botão para branco */
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.anime-card {
+  background-color: #ff0000; /* Fundo cinza escuro */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Sombra branca */
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  transition: background-color 0.5s ease-in-out;
+  max-width: 400px;
+}
+
+.anime-card:hover {
+  background-color: #727272; /* Cinza um pouco mais claro ao passar o mouse */
+}
+
+.highlighted {
+  background-color: rgb(86, 2, 182)!important;  
+  border: 2px solid #ffffff3c!important; /* Contorno branco */
+  cursor: pointer;
+}
+
+.anime-card h3 {
+  font-size: 18px;
+  margin-top: 0;
+  color: #fff; /* Torna o texto branco para contraste */
+}
+
+.anime-card p {
+  font-size: 14px;
+  color: #fff; /* Torna o texto branco para contraste */
+}
+
+.anime-card img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.delete-button {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
